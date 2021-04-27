@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp</title>
+</head>
+<body>
+{% extends 'DigiZiaApp/base.html' %}
+
+{% block content %}
+<h1>SignUp page!</h1>
+<form method="post" >
+    <h2>{{ error }}</h2>
+    {{ form.as_p }}
+    {% csrf_token %}
+
+    <button value="submit" >SIGNUP </button>
+
+</form>
+{% endblock %}
+
+</body>
+</html>

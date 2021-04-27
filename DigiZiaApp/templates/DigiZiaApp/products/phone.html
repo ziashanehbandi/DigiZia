@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phone</title>
+</head>
+<body>
+{% extends 'DigiZiaApp/base.html' %}
+{% load static %}
+
+{% block content %}
+    <h1>brands:</h1>
+{#    {% for phone in phones %}#}
+{#        {{ phone.title }}#}
+{##}
+{#    {% endfor %}#}
+
+<ul>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='phone' brand_pk='SAMSUNG'%}">SAMSUNG</a></font> <img src="{% static "DigiZiaApp/samsung.png" %}" alt="" width="55px" height="40px"></li>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='phone' brand_pk='APPLE'%}">APPLE</a></font> <img src="{% static "DigiZiaApp/apple.png" %}" alt="" width="55px" height="40px"></li>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='phone' brand_pk='HUAWEI'%}">HOAWEI</a></font> <img src="{% static "DigiZiaApp/hoawei.png" %}" alt="" width="55px" height="40px"></li>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='phone' brand_pk='SHIOMI'%}">SHIOMI</a></font> <img src="{% static "DigiZiaApp/shiami.png" %}" alt="" width="55px" height="40px"></li>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='phone' brand_pk='NOKIA'%}">NOKIA</a></font> <img src="{% static "DigiZiaApp/nokia.png" %}" alt="" width="55px" height="40px"></li>
+
+</ul>
+
+
+
+
+{% endblock %}
+
+
+</body>
+</html>

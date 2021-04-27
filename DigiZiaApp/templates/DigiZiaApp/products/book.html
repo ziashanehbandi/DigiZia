@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>book</title>
+</head>
+<body>
+{% extends 'DigiZiaApp/base.html' %}
+{% load static %}
+
+{% block content %}
+    <h1>brands:</h1>
+{#    {% for book in books %}#}
+{#        {{ book.title }}#}
+{##}
+{#    {% endfor %}#}
+
+<ul>
+{#    <li><font size="5"><a href="{% url 'each_brand' digi_pk='book' brand_pk='ALL'%}">ALL CATEGORIES</a></font> <img src="{% static "DigiZiaApp/none.jfif" %}" alt="" width="55px" height="40px"></li>#}
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='book' brand_pk='ALL CATEGORIES'%}">ALL CATEGORIES</a></font> </li>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='book' brand_pk='ARTS $ PHOTOGRAPHY'%}">ARTS $ PHOTOGRAPHY</a></font> <img src="{% static "DigiZiaApp/art.jfif" %}" alt="" width="55px" height="40px"></li>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='book' brand_pk='CHILDERENS BOOK'%}">CHILDERENS BOOK</a></font> <img src="{% static "DigiZiaApp/kids.png" %}" alt="" width="55px" height="40px"></li>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='book' brand_pk='HISTORY'%}">HISTORY</a></font> <img src="{% static "DigiZiaApp/history.png" %}" alt="" width="55px" height="40px"></li>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='book' brand_pk='ROMANCE'%}">ROMANCE</a></font> <img src="{% static "DigiZiaApp/romance.png" %}" alt="" width="55px" height="40px"></li>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='book' brand_pk='TEENS & YOUNG ADULT'%}">TEENS & YOUNG ADULT</a></font> <img src="{% static "DigiZiaApp/teen.png" %}" alt="" width="55px" height="40px"></li>
+
+</ul>
+
+
+
+
+{% endblock %}
+
+</body>
+</html>

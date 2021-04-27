@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shiami</title>
+</head>
+<body>
+{% extends 'DigiZiaApp/base.html' %}
+
+
+
+{% block content %}
+<h1>SHIOMI PHONES:</h1>
+
+
+    {% for phone in phones %}
+        <a href="#eachphone shiomi">
+            <img src="{{phone.image.url}}" alt="" width="200" height="150">
+        <font size="5"><p>{{ phone.title }}</p></font>
+
+        </a>
+
+
+
+        <br>
+    {% endfor %}
+
+{% endblock %}
+
+
+
+
+</body>
+</html>

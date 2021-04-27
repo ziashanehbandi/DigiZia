@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'DigiZiaApp/base.html' %}
+
+
+
+{% block content %}
+<h1>ASUS LAPTOPS:</h1>
+
+    {% for laptop in laptops %}
+        <a href="#eachphone huawei">
+            <img src="{{laptop.image.url}}" alt="" width="200" height="150">
+        <font size="5"><p>{{ laptop.title }}</p></font>
+       </a>
+
+
+
+
+
+        <br>
+    {% endfor %}
+
+{% endblock %}
+
+
+
+
+</body>
+</html>

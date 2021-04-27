@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>laptop</title>
+</head>
+<body>
+{% extends 'DigiZiaApp/base.html' %}
+{% load static %}
+
+{% block content %}
+    <h1>brands:</h1>
+{#    {% for laptop in laptops %}#}
+{#        {{ laptop.title }}#}
+{##}
+{#    {% endfor %}#}
+
+<ul>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='laptop' brand_pk='SAMSUNG'%}">SAMSUNG</a></font> <img src="{% static "DigiZiaApp/samsung.png" %}" alt="" width="55px" height="40px"></li>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='laptop' brand_pk='APPLE'%}">APPLE</a></font> <img src="{% static "DigiZiaApp/apple.png" %}" alt="" width="55px" height="40px"></li>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='laptop' brand_pk='ASUS'%}">ASUS</a></font> <img src="{% static "DigiZiaApp/asus.png" %}" alt="" width="55px" height="40px"></li>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='laptop' brand_pk='LENOVA'%}">LENOVA</a></font> <img src="{% static "DigiZiaApp/lenova.png" %}" alt="" width="55px" height="40px"></li>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='laptop' brand_pk='HP'%}">HP</a></font> <img src="{% static "DigiZiaApp/hp.png" %}" alt="" width="55px" height="40px"></li>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='laptop' brand_pk='DELL'%}">DELL</a></font> <img src="{% static "DigiZiaApp/dell.png" %}" alt="" width="55px" height="40px"></li>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='laptop' brand_pk='MSI'%}">MSI</a></font> <img src="{% static "DigiZiaApp/msi.png" %}" alt="" width="55px" height="40px"></li>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='laptop' brand_pk='MICROSOFT'%}">MICROSOFT</a></font> <img src="{% static "DigiZiaApp/microsoft.pngpng" %}" alt="" width="55px" height="40px"></li>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='laptop' brand_pk='ACER'%}">ACER</a></font> <img src="{% static "DigiZiaApp/acer.png" %}" alt="" width="55px" height="40px"></li>
+
+</ul>
+
+
+
+
+{% endblock %}
+
+
+</body>
+</html>

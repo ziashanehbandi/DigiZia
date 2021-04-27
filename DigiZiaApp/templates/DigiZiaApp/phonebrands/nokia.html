@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nokia</title>
+</head>
+<body>
+{% extends 'DigiZiaApp/base.html' %}
+
+
+
+{% block content %}
+<h1>NOKIA PHONES:</h1>
+{{ error }}
+
+    {% for phone in phones %}
+        <a href="#eachphone nokia">
+            <img src="{{phone.image.url}}" alt="" width="200" height="150">
+            <font size="5"><p>{{ phone.title }}</p></font>
+        </a>
+
+
+
+
+
+        <br>
+    {% endfor %}
+
+
+{% endblock %}
+
+
+
+
+</body>
+</html>

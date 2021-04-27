@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'DigiZiaApp/base.html' %}
+{% load static %}
+
+{% block content %}
+    <h1>brands:</h1>
+{#    {% for camera in cameras %}#}
+{#        {{ book.title }}#}
+{##}
+{#    {% endfor %}#}
+
+<ul>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='camera' brand_pk='CANON'%}">CANON</a></font> <img src="{% static "DigiZiaApp/canon.png" %}" alt="" width="55px" height="40px"></li>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='camera' brand_pk='NIKON'%}">NIKON</a></font> <img src="{% static "DigiZiaApp/nikon.jfif" %}" alt="" width="55px" height="40px"></li>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='camera' brand_pk='SHIOMI'%}">SHIOMI</a></font> <img src="{% static "DigiZiaApp/shiami.png" %}" alt="" width="55px" height="40px"></li>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='camera' brand_pk='SONY'%}">SONY</a></font> <img src="{% static "DigiZiaApp/sony.png" %}" alt="" width="55px" height="40px"></li>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='camera' brand_pk='FUJIFILM'%}">FUJIFILM</a></font> <img src="{% static "DigiZiaApp/fuji1.png" %}" alt="" width="55px" height="40px"></li>
+    <li><font size="5"><a href="{% url 'each_brand' digi_pk='camera' brand_pk='SAMSUNG'%}">SAMSUNG</a></font> <img src="{% static "DigiZiaApp/samsung.png" %}" alt="" width="55px" height="40px"></li>
+
+</ul>
+
+
+
+
+{% endblock %}
+
+</body>
+</html>

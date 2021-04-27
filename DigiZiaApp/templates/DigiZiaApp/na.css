@@ -1,0 +1,7 @@
+/*.img-col, .text-col {*/
+/*display: inline-block;*/
+/*}*/
+.container{
+    display: flex;
+
+}

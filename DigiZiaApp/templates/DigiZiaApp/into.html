@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>into</title>
+</head>
+<body>
+{% extends 'DigiZiaApp/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <h1>products category:</h1>
+    <ul>
+       <li><font size="5"><a href="{% url 'product' digi_pk='phone' %}"  id="1">phone</a></font> <img src="{% static "DigiZiaApp/phone.png" %}" alt="" width="55px" height="40px"></li>
+        <br>
+       <li><font size="5"><a href="{% url 'product' digi_pk='laptop' %}">laptop</a></font><img src="{% static "DigiZiaApp/laptop.jpg" %}" alt="" width="55px" height="40px"></li>
+        <br>
+       <li><font size="5"><a href="{% url 'product' digi_pk='book' %}" >book</a> </font><img src="{% static "DigiZiaApp/book.jpg" %}" alt="" width="55px" height="40px"></li>
+        <br>
+       <li><font size="5"><a href="{% url 'product' digi_pk='camera' %}">camera</a></font><img src="{% static "DigiZiaApp/camera.jfif" %}" alt="" width="55px" height="40px"></li>
+
+    </ul>
+
+
+
+{% endblock %}
+
+</body>
+</html>
